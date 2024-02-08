@@ -1,0 +1,17 @@
+GET http://localhost:9090/sign
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.O1JvZnJkGJ3rCIAut7iU-HEGxzL0Q1-Yym85QJ0D05Q
+
+{
+    "questions": "what is your name?",
+    "answers": "John Doe"
+}
+
+###
+
+GET http://localhost:9090/verify
+
+{
+    "userid": 1,
+    "username": "John Doe",
+    "signature": "878afc48-4bed-405d-b660-ff06dbcd43a1"
+}
